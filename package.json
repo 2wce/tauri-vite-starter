@@ -1,7 +1,13 @@
 {
   "name": "tauri-vite-starter",
-  "private": true,
   "version": "0.0.0",
+  "description": "An opinionated TS Lib Starter",
+  "license": "MIT",
+  "private": false,
+  "author": {
+    "name": "Kudakwashe Mupeni",
+    "email": "said.coyness-0m@icloud.com"
+  },
   "type": "module",
   "scripts": {
     "format": "prettier --write \"src/**/*.ts\" && prettier --write \"src/**/*.tsx\" && prettier --write *.json && prettier --write .*.json && prettier --write *.ts && prettier --write *.js",
