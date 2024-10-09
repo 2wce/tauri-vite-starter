@@ -1,9 +1,14 @@
+import { createLazyFileRoute } from "@tanstack/react-router";
 import { ThemeProvider } from "@/components/theme-provider";
-import UserAuthForm from "./components/forms/user-auth-form";
-import { buttonVariants } from "./components/ui/button";
-import { cn } from "./lib/utils";
+import UserAuthForm from "@/components/forms/user-auth-form";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
-export const App = () => {
+export const Route = createLazyFileRoute("/")({
+  component: Index,
+});
+
+function Index() {
   return (
     <ThemeProvider>
       <div className="relative h-screen flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-2 lg:px-0">
@@ -77,4 +82,4 @@ export const App = () => {
       </div>
     </ThemeProvider>
   );
-};
+}

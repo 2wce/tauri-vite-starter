@@ -11,6 +11,8 @@ edition = "2021"
 tauri-build = { version = "1", features = [] }
 
 [dependencies]
+diesel = { version = "2.2.0", features = ["sqlite", "returning_clauses_for_sqlite_3_35"] }
+dotenvy = "0.15" # For loading environment variables from .env
 tauri = { version = "1", features = [ "fs-write-file", "fs-read-file", "dialog-open", "shell-open"] }
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
